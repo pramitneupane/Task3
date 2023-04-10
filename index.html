@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Balanced Brackets</title>
+    <style>
+      *
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 20px;
+  margin-right: 10px;
+  
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #1c45c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Check for Balanced Brackets</h1>
+    <form>
+      <label for="input">Enter a string of brackets:</label>
+      <input type="text" id="input" name="input" required>
+      <button type="button" onclick="checkBrackets()">Check</button>
+    </form>
+    <p id="result"></p>
+    <script src="apps.js"></script>
+  </body>
+</html>
